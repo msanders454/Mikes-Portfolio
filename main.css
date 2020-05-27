@@ -39,7 +39,7 @@ nav {
     top: 33px;
   }
 
-  .icons {
+.icons {
     top:15px;
     right: 33px;
     position: absolute;
@@ -47,21 +47,21 @@ nav {
     cursor: pointer;
     display: flex;
     flex-direction: column;
-    }
+}
 
-    .fa-github{
-        padding-bottom: 10px;
-    }
+.fa-github{
+    padding-bottom: 10px;
+}
 
-    .fa-linkedin-square{
-        padding-bottom: 10px;
-        font-size: 26px;
-    }
+.fa-linkedin-square{
+    padding-bottom: 10px;
+    font-size: 26px;
+}
 
-    .fa-envelope{
-        padding-bottom: 10px;
-        font-size: 23px;
-    }
+.fa-envelope{
+    padding-bottom: 10px;
+    font-size: 23px;
+}
 
 .header{
     padding-top: 90px;
@@ -74,28 +74,28 @@ nav {
     z-index: 1;
   }
   
-  .header h1{
+.header h1{
     text-align: center;
-      font-size: 50px;
-      letter-spacing: 15px;
-      padding: 0px;
-      margin-top: 10px;
-      margin-bottom: 10px;
-      text-shadow: 0 0 6px #8A8AFF, 0 0 10px #15f14c;
-      font-family: 'Merriweather', serif;
-      font-weight: 500;
-  }
+    font-size: 50px;
+    letter-spacing: 15px;
+    padding: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-shadow: 0 0 6px #8A8AFF, 0 0 10px #15f14c;
+    font-family: 'Merriweather', serif;
+    font-weight: 500;
+}
 
-  .header h2{
+.header h2{
     font-size: 25px;
     letter-spacing: 2px;
     padding-top: 50px;
     margin-top: 10px;
     margin-bottom: 10px;
     text-shadow: 0 0 6px #8A8AFF, 0 0 10px #15f14c;
-  }
+}
 
-  ul {
+ul {
     margin-top: 3px;
 }
 
@@ -124,8 +124,8 @@ a {
 }
 
 a:hover {
-     color: rgb(29, 157, 216);
-     transform: color;
+    color: rgb(29, 157, 216);
+    transform: color;
 }
 
 .about{
@@ -137,11 +137,11 @@ a:hover {
   }
   
   .abstract{
-      padding:4px;
+    padding:4px;
     font-size: 15px;
     color: white;
     letter-spacing: 5px;
-  text-align: center;
+    text-align: center;
 } 
 
 main {
@@ -155,12 +155,12 @@ main {
 .psu{
     height: 2px;
      visibility: hidden;
-  }
+}
   
-  .tf{
+.tf{
     height: 2px;
-     visibility: hidden;
-  }
+    visibility: hidden;
+}
 p {
     font-family: 'Montserrat', sans-serif;
     line-height: 1.8;
@@ -217,6 +217,27 @@ button:hover {
     color: rgb(8, 0, 0);
 }
 
+.resume-a{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    width: 150px;
+    height: 40px;
+    margin-top: 10px;
+    background: rgb(0, 0, 0);
+    border: 1px solid rgb(175, 173, 173);
+    border-radius: 10%;
+    color: rgb(255, 255, 255);
+}
+
+.resume-a:hover {
+    cursor: pointer;
+    background: white;
+    color: rgb(8, 0, 0);
+}
+
 .projects-nav, .contact-nav, .resume-nav {
     margin-top:40px;
     display: flex;
@@ -236,11 +257,11 @@ button:hover {
   }
   
   
-  .copyright p{
+.copyright p{
     font-size: 15px;
-  }
+}
 
-  .project-div {
+.project-div {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -368,6 +389,19 @@ button a{
 
 }
 
+.resume-a{
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+}
+
+.resume-down{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    line-height: 1;
+}
+
 .contact-row{
     display: flex;
     flex-direction: column;
@@ -397,43 +431,42 @@ button a{
 
 
 
-  /* START OF MEDIA QUERIES START OF MEDIA QUERIES START OF MEDIA QUERIES START OF MEDIA QUERIES */
+  /* Media Queries Below */
   
-  @media screen and (min-width: 500px){
+@media screen and (min-width: 500px){
     .header h2{
         font-size: 35px;
-      }
+    }
 
-      .nav-links {
+    .nav-links {
         margin-top:50px;
         flex-direction: row;
         justify-content: space-evenly;
     }
 
-     .resume {
+    .resume {
         margin-top:20px;
     }
 
     .m{ 
         left: 10px;
-      }
+    }
     
-      .icons {
+    .icons {
         right: 13px;
-        }
+    }
 
     .about{
         font-size: 40px;
-      }
+    }
 
-      .abstract{
+    .abstract{
         padding-left:10px;
         padding-left:10px;
         font-size: 25px;
+    } 
 
-  } 
-
-      p {
+    p {
         font-family: 'Montserrat', sans-serif;
         line-height: 1.8;
         font-size: 23px;
@@ -448,9 +481,9 @@ button a{
          top: 780px;
          visibility: visible;
          right: 550px;
-      }
+    }
       
-      .tf{
+    .tf{
         position: absolute;
         z-index: -1;
         height: 122px;
@@ -458,9 +491,9 @@ button a{
         top: 770px;
         visibility: visible;
         left: 550px;
-      }
+    }
 
-      #sanders-info {
+    #sanders-info {
         display: block;
         width: 100%;
         padding: none;
@@ -510,7 +543,7 @@ button a{
 
   }
 
-  @media screen and (min-width: 800px){
+@media screen and (min-width: 800px){
     a {
         font-size:25px
     }
@@ -536,6 +569,18 @@ button a{
         margin-top: 20px;
     }
 
+    .resume-a {
+        width: 300px;
+        height: 80px;
+        margin-top: 20px;
+    }
+
+    .resume-down{
+        font-size: 26px;
+        letter-spacing: 4px;
+    }
+    
+
     .psu{
         position: absolute;
         z-index: -1;
@@ -547,7 +592,7 @@ button a{
          right: 750px;
       }
       
-      .tf{
+    .tf{
         position: absolute;
         z-index: -1;
         height: 122px;
@@ -555,32 +600,29 @@ button a{
         top: 770px;
         visibility: visible;
         left: 750px;
-      }
+    }
 
-      .contact-page {
+    .contact-page {
         margin-top: 250px;
     }
 
-      .project-image {
+    .project-image {
         width: 700px;
     }
     .c-description{
         font-size: 30px
     }
 
-  }
+}
 
-  @media screen and (max-height: 800px){
+@media screen and (max-height: 800px){
    
-      .contact-page {
+    .contact-page {
         margin-top: 450px;
     }
 
-      .project-image {
-        width: 700px;
-    }
     .c-description{
         font-size: 30px
     }
 
-  }
+}
