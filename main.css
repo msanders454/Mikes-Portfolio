@@ -1,0 +1,586 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    background-color: black;
+}
+
+body {
+    text-align: center;
+    height: 100%;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgb(9, 19, 36);
+    font-family: impact;
+    font-weight: 300;
+    border-bottom: 1px solid white;
+    height: 120px;
+    width: 100%;
+}
+
+.nav-links {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 0px;
+}
+
+.m{ position: absolute;
+    height: 55px;
+    width: auto;
+    left: 33px;
+    top: 33px;
+  }
+
+  .icons {
+    top:15px;
+    right: 33px;
+    position: absolute;
+    font-size: 1.3rem;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    }
+
+    .fa-github{
+        padding-bottom: 10px;
+    }
+
+    .fa-linkedin-square{
+        padding-bottom: 10px;
+        font-size: 26px;
+    }
+
+    .fa-envelope{
+        padding-bottom: 10px;
+        font-size: 23px;
+    }
+
+.header{
+    padding-top: 90px;
+    margin-top: 120px;
+    font-size: 25px;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+  }
+  
+  .header h1{
+    text-align: center;
+      font-size: 50px;
+      letter-spacing: 15px;
+      padding: 0px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      text-shadow: 0 0 6px #8A8AFF, 0 0 10px #15f14c;
+      font-family: 'Merriweather', serif;
+      font-weight: 500;
+  }
+
+  .header h2{
+    font-size: 25px;
+    letter-spacing: 2px;
+    padding-top: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-shadow: 0 0 6px #8A8AFF, 0 0 10px #15f14c;
+  }
+
+  ul {
+    margin-top: 3px;
+}
+
+li {
+    display: block;
+    padding: 2px;
+    color: white;
+}
+
+header {
+    background: url(https://i.ytimg.com/vi/83nKXiKONiQ/maxresdefault.jpg) no-repeat center center fixed;
+    background-size: cover;
+    width: 100%;
+    color: white;
+    height: 600px;
+}
+
+
+a { 
+    font-size: 16px;
+    font-family: impact;
+    color: white;
+    text-decoration: none;
+    letter-spacing: 4px;
+    transition: all .5s ease;
+}
+
+a:hover {
+     color: rgb(29, 157, 216);
+     transform: color;
+}
+
+.about{
+    color: #ffffff;
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  
+  .abstract{
+      padding:4px;
+    font-size: 15px;
+    color: white;
+    letter-spacing: 5px;
+  text-align: center;
+} 
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    min-height: 300px;
+    flex-direction: column;
+    padding-top: 30px;
+}
+.psu{
+    height: 2px;
+     visibility: hidden;
+  }
+  
+  .tf{
+    height: 2px;
+     visibility: hidden;
+  }
+p {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.8;
+    font-size: 18px;
+    color: white;
+}
+
+.line{
+    margin-top: 40px;
+    color:white;
+    width: 95%;
+    border: solid;
+}
+
+.bio {
+    text-align: center;
+    padding: 15px;
+    max-width: 700px;
+}
+
+
+#sanders-info {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: none;
+    margin-bottom:30px;
+}
+
+.icon {
+    width: 300px;
+    border: 2px solid white;
+}
+
+button {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    width: 150px;
+    height: 40px;
+    margin-top: 10px;
+    background: rgb(0, 0, 0);
+    border: 1px solid rgb(175, 173, 173);
+    border-radius: 10%;
+    color: rgb(255, 255, 255);
+}
+
+button:hover {
+    cursor: pointer;
+    background: white;
+    color: rgb(8, 0, 0);
+}
+
+.projects-nav, .contact-nav, .resume-nav {
+    margin-top:40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom:10px;
+  }
+.copyright{
+    font-size: 10px;
+    color: white;
+    width: 100%;
+    text-align: center;
+    background-color: #16162d;
+    padding: 1rem 0;
+    position: relative;
+    border-top: 1px solid white;
+  }
+  
+  
+  .copyright p{
+    font-size: 15px;
+  }
+
+  .project-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.project-div > h2 {
+    margin-top: 80px;
+    font-size: 40px;
+    border: 3px solid white;
+    padding: 10px 20px;
+}
+
+.project-image {
+    border: 3px solid white;
+    width: 300px;
+    height: auto;
+    margin: 20px;
+}
+
+.js-contact-container {
+    width: 100%;
+    height: 100%;
+    min-height: 700px;
+    padding-bottom: 40px;
+}
+
+.js-project-container {
+    height: 100%;
+    min-height: 1050px;
+}
+
+.project-page{
+    font-family: 'Montserrat', sans-serif;
+    margin-top:140px;
+    font-size:50px;
+}
+
+.project-links {
+    display: flex;
+    justify-content: space-evenly;
+    width: 180px;
+    margin-left: 45px;
+}
+
+.project-links > a {
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.project-links > a:hover {
+    text-decoration: underline;
+}
+
+.project-links > span {
+    color: white;
+    font-size: 25px;
+}
+
+.tech-header {
+    color: white;
+    font-weight: 500;
+    margin-bottom: 1px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+.tech {
+    font-size: 30px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.technology {
+    margin-bottom: 20px;
+}
+
+.tech-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+    margin-top: 10px;
+}
+
+.tech-logo {
+    width: 29px;
+}
+
+.box{
+    border: 1px solid white;
+}
+
+.contact-div {
+    margin-top: 40px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-div > h2 {
+    margin-top: 80px;
+}
+
+.contact-page {
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 250px;
+    font-size: 50px;
+    color: white
+}
+
+.c-description {
+    margin-top: 20px;
+    padding: 20px;
+}
+
+button a{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+}
+
+.contact-row{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    color:white;
+}
+
+.contact-info {
+    margin-left: 10px;
+}
+
+.row .fa-envelope, .fa-mobile-alt, .fa-linkedin, .fa-github-square, .fa-twitter-square {
+    margin-top: 25px;
+}
+
+.row i{
+  font-size:15px
+}
+
+
+
+
+
+  /* START OF MEDIA QUERIES START OF MEDIA QUERIES START OF MEDIA QUERIES START OF MEDIA QUERIES */
+  
+  @media screen and (min-width: 500px){
+    .header h2{
+        font-size: 35px;
+      }
+
+      .nav-links {
+        margin-top:50px;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+     .resume {
+        margin-top:20px;
+    }
+
+    .m{ 
+        left: 10px;
+      }
+    
+      .icons {
+        right: 13px;
+        }
+
+    .about{
+        font-size: 40px;
+      }
+
+      .abstract{
+        padding-left:10px;
+        padding-left:10px;
+        font-size: 25px;
+
+  } 
+
+      p {
+        font-family: 'Montserrat', sans-serif;
+        line-height: 1.8;
+        font-size: 23px;
+        color: white;
+    }
+    .psu{
+        position: absolute;
+        z-index: -1;
+        height: 80px;
+         width: auto;
+         margin-right: 30px;
+         top: 780px;
+         visibility: visible;
+         right: 550px;
+      }
+      
+      .tf{
+        position: absolute;
+        z-index: -1;
+        height: 122px;
+        width: auto;
+        top: 770px;
+        visibility: visible;
+        left: 550px;
+      }
+
+      #sanders-info {
+        display: block;
+        width: 100%;
+        padding: none;
+        margin-bottom:30px;
+    }
+
+    
+
+    .project-image {
+        width: 500px;
+        height: auto;
+        margin: 20px;
+    }
+
+    .project-links {
+        width: 480px;
+        margin-left: 35px;
+    }
+
+    .project-links > a {
+        font-size: 28px;
+    }
+
+    .tech {
+        font-size: 35px;
+    }
+
+    .tech-logo {
+        width: 39px;
+    }
+
+    .contact-info {
+        margin-left: 20px;
+    }
+
+    .row .fa-envelope, .fa-mobile-alt, .fa-linkedin, .fa-github-square, .fa-twitter-square {
+        margin-top: 45px;
+    }
+
+    .row p, .row a{
+        font-size:30px
+    }
+
+    .row i{
+        font-size:25px
+      }
+
+  }
+
+  @media screen and (min-width: 800px){
+    a {
+        font-size:25px
+    }
+
+    .nav-links {
+        margin-top: 40px;
+    }
+
+    .icons {
+        top: 5px;
+    }
+
+    .icon {
+        width: 500px;
+        border: 3px solid white;
+    }
+
+    button {
+        font-size: 26px;
+        letter-spacing: 4px;
+        width: 300px;
+        height: 80px;
+        margin-top: 20px;
+    }
+
+    .psu{
+        position: absolute;
+        z-index: -1;
+        height: 80px;
+         width: auto;
+         margin-right: 30px;
+         top: 780px;
+         visibility: visible;
+         right: 750px;
+      }
+      
+      .tf{
+        position: absolute;
+        z-index: -1;
+        height: 122px;
+        width: auto;
+        top: 770px;
+        visibility: visible;
+        left: 750px;
+      }
+
+      .contact-page {
+        margin-top: 250px;
+    }
+
+      .project-image {
+        width: 700px;
+    }
+    .c-description{
+        font-size: 30px
+    }
+
+  }
+
+  @media screen and (max-height: 800px){
+   
+      .contact-page {
+        margin-top: 450px;
+    }
+
+      .project-image {
+        width: 700px;
+    }
+    .c-description{
+        font-size: 30px
+    }
+
+  }
