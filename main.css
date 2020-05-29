@@ -25,9 +25,9 @@ nav {
 
 .topnav {
     overflow: hidden;
-  }
+}
   
-  .topnav a {
+.topnav a {
     float: left;
     display: block;
     color: #f2f2f2;
@@ -35,17 +35,10 @@ nav {
     padding: 14px 16px;
     text-decoration: none;
     font-size: 20px;
-  }
+}
 
-  .topnav .icon {
+.topnav .icon {
     display: none;
-  }
-
-.nav-links {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    padding-left: 0px;
 }
 
 .m{ position: absolute;
@@ -682,7 +675,7 @@ button a{
     }
    
     .contact-page {
-        margin-top: 99px;
+        margin-top: 140px;
     }
 
     .c-description{

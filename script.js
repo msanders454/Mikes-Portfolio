@@ -6,11 +6,9 @@ function hideProjectPages(){
     $('.js-contact-container').hide();
 }
 
-//    <figure class = "pictures">
-//<img src="images/M.png" alt="M" class = "m" >
-//</figure>
+//   function activates hamburger page
 
-function myFunction() {
+function myHamburger() {
   var x = document.getElementById("myTopnav");
   if (x.className === "topnav") {
     x.className += " responsive";
@@ -180,7 +178,7 @@ function renderContact(){
 
 
     <div class= "contact-row">
-    <div class="row"><i class="far fa-envelope"></i><p><a href="mailto:mikesanderspsu0@gmail.com" target="_blank" class="contact-info">mikesanderspsu0@gmail.com</a></p></div>
+    <div class="row"><i class="far fa-envelope"></i><p><a href="mailto:mikesanderspsu@gmail.com" target="_blank" class="contact-info">mikesanderspsu@gmail.com</a></p></div>
     <div class="row"><i class="fas fa-mobile-alt"></i><p class="contact-info">(215)-290-7164</p></div>
     <div class="row"><i class="fab fa-linkedin"></i><p><a href="https://www.linkedin.com/in/michael-s-sanders-ii/" target="_blank" class="contact-info">LinkedIn: michael-s-sanders-ii </a></p></div>
     <div class="row"><i class="fab fa-github-square"></i><p><a href="https://github.com/msanders454" target="_blank" class="contact-info">GitHub: msanders454</a></p></div>
