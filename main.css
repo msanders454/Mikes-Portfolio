@@ -13,7 +13,6 @@ body {
 }
 
 nav {
-    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -21,9 +20,26 @@ nav {
     font-family: impact;
     font-weight: 300;
     border-bottom: 1px solid white;
-    height: 120px;
     width: 100%;
 }
+
+.topnav {
+    overflow: hidden;
+  }
+  
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+  }
+
+  .topnav .icon {
+    display: none;
+  }
 
 .nav-links {
     height: 100%;
@@ -33,10 +49,10 @@ nav {
 }
 
 .m{ position: absolute;
-    height: 55px;
+    height: 63px;
     width: auto;
-    left: 33px;
-    top: 33px;
+    left: 5px;
+    top: 17px;
   }
 
 .icons {
@@ -65,7 +81,6 @@ nav {
 
 .header{
     padding-top: 90px;
-    margin-top: 120px;
     font-size: 25px;
     top: 50%;
     left: 50%;
@@ -79,9 +94,9 @@ nav {
     font-size: 50px;
     letter-spacing: 15px;
     padding: 0px;
-    margin-top: 10px;
+    margin-top: 63px;
     margin-bottom: 10px;
-    text-shadow: 0 0 6px #8A8AFF, 0 0 10px #15f14c;
+    text-shadow: 0 0 6px rgb(0, 0, 3), 0 0 10px #000000;
     font-family: 'Merriweather', serif;
     font-weight: 500;
 }
@@ -92,7 +107,7 @@ nav {
     padding-top: 50px;
     margin-top: 10px;
     margin-bottom: 10px;
-    text-shadow: 0 0 6px #8A8AFF, 0 0 10px #15f14c;
+    text-shadow: 0 0 6px rgb(0, 0, 0), 0 0 10px #000000;
 }
 
 ul {
@@ -179,6 +194,7 @@ p {
     text-align: center;
     padding: 15px;
     max-width: 700px;
+    font-size: 19px;
 }
 
 
@@ -191,8 +207,8 @@ p {
     margin-bottom:30px;
 }
 
-.icon {
-    width: 300px;
+.picture {
+    width: 189px;
     border: 2px solid white;
 }
 
@@ -296,7 +312,7 @@ button:hover {
 
 .project-page{
     font-family: 'Montserrat', sans-serif;
-    margin-top:140px;
+    margin-top:85px;
     font-size:50px;
 }
 
@@ -370,7 +386,7 @@ button:hover {
 
 .contact-page {
     font-family: 'Montserrat', sans-serif;
-    margin-top: 250px;
+    margin-top: -91px;
     font-size: 50px;
     color: white
 }
@@ -434,9 +450,16 @@ button a{
   /* Media Queries Below */
   
 @media screen and (min-width: 500px){
+
     .header h2{
         font-size: 35px;
     }
+
+    nav {
+        display: flex;
+        justify-content: flex-end;
+    }
+    
 
     .nav-links {
         margin-top:50px;
@@ -444,12 +467,10 @@ button a{
         justify-content: space-evenly;
     }
 
-    .resume {
-        margin-top:20px;
-    }
-
     .m{ 
+        height: 52px;
         left: 10px;
+        top: 8px;
     }
     
     .icons {
@@ -466,6 +487,15 @@ button a{
         font-size: 25px;
     } 
 
+    .picture {
+        width: 375px;
+        border: 3px solid white;
+    }
+
+    .bio {
+        font-size: 22px;
+    }
+
     p {
         font-family: 'Montserrat', sans-serif;
         line-height: 1.8;
@@ -478,7 +508,7 @@ button a{
         height: 80px;
          width: auto;
          margin-right: 30px;
-         top: 780px;
+         top: 708px;
          visibility: visible;
          right: 550px;
     }
@@ -488,7 +518,7 @@ button a{
         z-index: -1;
         height: 122px;
         width: auto;
-        top: 770px;
+        top: 676px;
         visibility: visible;
         left: 550px;
     }
@@ -543,6 +573,25 @@ button a{
 
   }
 
+  @media screen and (max-width: 600px) {
+
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+    }
+  }
+
 @media screen and (min-width: 800px){
     a {
         font-size:25px
@@ -556,7 +605,7 @@ button a{
         top: 5px;
     }
 
-    .icon {
+    .picture {
         width: 500px;
         border: 3px solid white;
     }
@@ -580,6 +629,9 @@ button a{
         letter-spacing: 4px;
     }
     
+    .topnav a {
+        font-size: 25px;
+    }
 
     .psu{
         position: absolute;
@@ -587,7 +639,7 @@ button a{
         height: 80px;
          width: auto;
          margin-right: 30px;
-         top: 780px;
+         top: 708px;
          visibility: visible;
          right: 750px;
       }
@@ -597,13 +649,17 @@ button a{
         z-index: -1;
         height: 122px;
         width: auto;
-        top: 770px;
+        top: 685px;
         visibility: visible;
         left: 750px;
     }
 
+    .bio {
+        font-size: 28px;
+    }
+
     .contact-page {
-        margin-top: 250px;
+        margin-top: -254px
     }
 
     .project-image {
@@ -616,13 +672,21 @@ button a{
 }
 
 @media screen and (max-height: 800px){
+
+    a {
+        font-size: 12px;
+    }
+
+    .contact-info{
+        font-size: 14px;
+    }
    
     .contact-page {
-        margin-top: 450px;
+        margin-top: 99px;
     }
 
     .c-description{
-        font-size: 30px
+        font-size: 18px
     }
 
 }

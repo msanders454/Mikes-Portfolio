@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Michael Sanders's Portfolio</title>
-    <link rel="stylesheet" type="text/css" href="normalize.css">
     <link href="main.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/258a7d4c5a.js" crossorigin="anonymous"></script>
@@ -12,33 +11,23 @@
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
 </head>
 <body>
-    <nav>
+    <nav class="topnav" id="myTopnav">
         <figure class = "pictures">
             <img src="images/M.png" alt="M" class = "m" >
         </figure>
-        <ul class="nav-links">
-            <li><a href="#" class="about-me">About Me</a></li>
-            <li><a href="#projects" class="projects">Projects</a></li>
-            <li><a href="#contact" class="contact">Contact</a></li>
-            <li><a href="https://pdfhost.io/v/cCyelesZ_MichaelShawnSandersIIResumepdf.pdf" class="resume" target="_blank">Resume</a></li>
-        </ul>
-        <div class="icons">
-            <a href="https://github.com/msanders454" target="_blank">
-                <i class="fab fa-github"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/michael-s-sanders-ii/" target="_blank">
-                <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-            </a>
-            <a href="mailto:mikesanderspsu@gmail.com" target="_blank">
-                <i class="fas fa-envelope"></i>
-            </a>
-        </div>
+            <a href="#" class="about-me">About Me</a>
+            <a href="#projects" class="projects">Projects</a>
+            <a href="#contact" class="contact">Contact</a>
+            <a href="https://pdfhost.io/v/cCyelesZ_MichaelShawnSandersIIResumepdf.pdf" class="resume" target="_blank">Resume</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
     </nav>
 
     <div class="js-project-container"></div>
     <div class="js-contact-container"></div>
 
-    <div class="home-wrapper">
+    <section class="home-wrapper">
         <header class="header">
             <h1>Michael Sanders</h1>
             <h2>Hi I’m Mike, and I'm a Full Stack Developer. It's great to meet you!</h2>
@@ -46,10 +35,10 @@
     
         <main>
             <img src="images/PSU.png" alt="Penn State" class = "psu" >
-            <h4 class="about">About Me</h4>
+            <h3 class="about">About Me</h3>
             <img src="images/Thinkful.png" alt="Thinkful" class = "tf">
-            <p class = 'abstrac'>I'm a Developer, Designer and Problem Solver.</p>
-            <section id="about-me">
+            <h4 class = 'abstrac'>I'm a Developer, Designer and Problem Solver.</h4>
+            <div id="about-me">
                 <p class="bio">
                     I graduated from Pennsylvania State University with a Bachelor of Science in Meteorology 
                     Weather Risk Management. I'm also a graduate from Thinkful's Engineering Flux 
@@ -57,38 +46,38 @@
                     React.js and Back-End APIs with Node.js & Express.js.
                     <br><br>
                     I love learning about new technologies and creating useful software applications. 
-                    I get excited learning the many different software around the web and country. 
-                    My goal is to be the best developer that I can be.
+                    I get excited learning the many different software around the web and country. I havea  desire to work 
+                    on a team with great programmers. My goal is to be the best developer that I can be. I 
                     <br><br>
                     Outside of technology, I am a die-hard Eagles fan when they don’t disappoint me. 
                     But I am also found playing Nintendo games, going on hikes and heading to the 
                     movies to watch the latest Marvel movie. Whenever I’m not doing the activities 
                     above, that means I am taking the opportunity to learn something new.
                 </p>
-            </section>
+            </div>
             <hr id = 'projectLine' class="line"/>
             <div id="sanders-info">
-                <section class="projects-nav">
-                    <img src="images/projects.jpg" alt="project code" class="icon">
+                <div class="projects-nav">
+                    <img src="images/projects.jpg" alt="project code" class="picture">
                     <button class="projects">Projects</button>
-                </section>
+                </div>
         
-                <section class="contact-nav">
-                    <img src="images/contact.jpg" alt="ways to contact" class="icon">
+                <div class="contact-nav">
+                    <img src="images/contact.jpg" alt="ways to contact" class="picture">
                     <button class="contact">Contact</button>
-                </section>
+                </div>
 
-                <section class="resume-nav">
-                    <img src="images/resume.png" alt="resume" class="icon">
+                <div class="resume-nav">
+                    <img src="images/resume.png" alt="resume" class="picture">
                     <a href="https://pdfhost.io/v/cCyelesZ_MichaelShawnSandersIIResumepdf.pdf" target="_blank" class="resume-a" ><p class="resume-down">Resume</p></a>
-                </section>
+                </div>
             </div>
         </main>
         <footer class="copyright">
             <h1>Website by Mike Sanders</h1>
             <p>&copy; 2020</p>
         </footer>
-    </div>
+    </section>
     <script src="https://code.jquery.com/jquery-3.4.0.js" integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo=" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>

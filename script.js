@@ -1,9 +1,22 @@
-//Keeps pages hidden ntil button is clicked
+//Keeps pages hidden until button is clicked
 $(hideProjectPages);
 
 function hideProjectPages(){
     $('.js-project-container').hide();
     $('.js-contact-container').hide();
+}
+
+//    <figure class = "pictures">
+//<img src="images/M.png" alt="M" class = "m" >
+//</figure>
+
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
 }
 
 //When user clicks the Projects button, page rerendors with project information
