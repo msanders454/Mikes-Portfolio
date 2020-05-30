@@ -114,6 +114,7 @@ li {
 }
 
 header {
+    background: url(https://i.ytimg.com/vi/83nKXiKONiQ/maxresdefault.jpg) no-repeat center center fixed;
     background-size: cover;
     width: 100%;
     color: white;
@@ -187,6 +188,7 @@ p {
     padding: 15px;
     max-width: 700px;
     font-size: 19px;
+    background-color:black;
 }
 
 
@@ -386,6 +388,7 @@ button:hover {
 .c-description {
     margin-top: 20px;
     padding: 20px;
+    color: white
 }
 
 button a{
