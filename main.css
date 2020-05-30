@@ -114,11 +114,11 @@ li {
 }
 
 header {
-    background: url(https://i.ytimg.com/vi/83nKXiKONiQ/maxresdefault.jpg) no-repeat center center fixed;
     background-size: cover;
     width: 100%;
     color: white;
     height: 600px;
+    background-color:black;
 }
 
 
@@ -142,6 +142,7 @@ a:hover {
     font-family: 'Montserrat', sans-serif;
     margin-bottom: 20px;
     margin-top: 20px;
+    background-color:black;
   }
   
   .abstract{
