@@ -31,6 +31,37 @@ function renderProjects(){
     let projects = 
     `<div class="project-div">
         <h1 class="project-page">Projects</h1>
+        <h2 class="project-title">Pong</h2>
+            
+        <div class="project-image-wrapper">
+            <img src="images/pong.PNG" alt="Pong SCreen" class="project-image">
+        </div>
+        <p class="description">
+            This is the recreation of the famous video game pong. This application uses only JavaScript 
+            to create the game. Users can change the difficulty with the help of event listeners.
+
+        </p>
+        <div class = "box">
+        <div class="project-links">
+            <a href="https://pong-umber.vercel.app/" target="_blank">Visit Site</a>
+            <span>|</span>
+            <a href="https://github.com/msanders454/pong" target="_blank">Source Code</a>
+        </div>
+        
+        <section class="technology">
+            <h3 class="tech-header">Technologies Used:</h3>
+            <div class="tech-wrap">
+                <div class="tech"><i class="fab fa-html5"></i></div>
+                <div class="tech"><i class="fab fa-css3-alt"></i></div>
+                <div class="tech"><i class="fab fa-js-square"></i></div>
+                <div class="tech"><img src="images/jQuery.png" class="tech-logo"></div>
+            </div>
+        </section>
+        </div>
+
+
+
+
         <h2 class="project-title">Time Capsule</h2>
             
         <div class="project-image-wrapper">
