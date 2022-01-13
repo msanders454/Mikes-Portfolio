@@ -506,7 +506,7 @@ button a{
          margin-right: 30px;
          top: 708px;
          visibility: visible;
-         right: 550px;
+         right: 80%;
     }
       
     .tf{
@@ -516,7 +516,7 @@ button a{
         width: auto;
         top: 676px;
         visibility: visible;
-        left: 550px;
+        left: 80%;
     }
 
     #sanders-info {
