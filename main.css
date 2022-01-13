@@ -637,7 +637,7 @@ button a{
          margin-right: 30px;
          top: 708px;
          visibility: visible;
-         right: 750px;
+         right: 75%;
       }
       
     .tf{
@@ -647,7 +647,7 @@ button a{
         width: auto;
         top: 685px;
         visibility: visible;
-        left: 750px;
+        left: 75%;
     }
 
     .bio {
