@@ -45,7 +45,7 @@ function renderProjects(){
         </p>
         <div class = "box">
         <div class="project-links">
-            <a href="wedding-r8bf8n7mu-msanders454.vercel.app" target="_blank">Visit Site</a>
+            <a href="https://wedding-r8bf8n7mu-msanders454.vercel.app/" target="_blank">Visit Site</a>
             <span>|</span>
             <a href="https://github.com/msanders454/Wedding" target="_blank">Source Code</a>
         </div>
