@@ -58,7 +58,7 @@ function renderProjects(){
                 <div class="tech"><i class="fab fa-node-js"></i></div>
             </div>
         </section>
-
+         </div>
         <h2 class="project-title">Pong</h2>
             
         <div class="project-image-wrapper">
