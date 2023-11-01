@@ -31,6 +31,36 @@ function renderProjects(){
     let projects = 
     `<div class="project-div">
         <h1 class="project-page">Projects</h1>
+
+        <h2 class="project-title">Wedding Website</h2>
+            
+        <div class="project-image-wrapper">
+            <img src="images/Wedding.png" alt="Wedding Website" class="project-image">
+        </div>
+        <p class="description">
+            This is a side project I created when I was engaged. I used React.js to create
+            the a website that is able to create different pages. I used more basic JavaScript to create the quiz 
+            show.
+
+        </p>
+        <div class = "box">
+        <div class="project-links">
+            <a href="wedding-r8bf8n7mu-msanders454.vercel.app" target="_blank">Visit Site</a>
+            <span>|</span>
+            <a href="https://github.com/msanders454/Wedding" target="_blank">Source Code</a>
+        </div>
+        
+        <section class="technology">
+            <h3 class="tech-header">Technologies Used:</h3>
+            <div class="tech-wrap">
+                <div class="tech"><i class="fab fa-css3-alt"></i></div>
+                <div class="tech"><i class="fab fa-react"></i></div>
+                <div class="tech"><i class="fab fa-node-js"></i></div>
+            </div>
+        </section>
+
+
+
         <h2 class="project-title">Pong</h2>
             
         <div class="project-image-wrapper">
@@ -184,7 +214,7 @@ function renderProjects(){
     <br>
     <footer class="copyright">
         <h1>Website by Mike Sanders</h1>
-        <p>&copy; 2020</p>
+        <p>&copy; 2023</p>
     </footer>`;
 
     $('.js-project-container').html(projects);
