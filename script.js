@@ -32,7 +32,24 @@ function renderProjects(){
     `<div class="project-div">
         <h1 class="project-page">Projects</h1>
 
-        
+        <h2 class="project-title">Wedding Website</h2>
+            
+        <div class="project-image-wrapper">
+            <img src="images/Wedding.png" alt="Wedding Website" class="project-image">
+        </div>
+        <p class="description">
+            This is a side project I created when I was engaged. I used React.js to create
+            the a website that is able to create different pages. I used more basic JavaScript to create the quiz 
+            show.
+
+        </p>
+        <div class = "box">
+        <div class="project-links">
+            <a href="wedding-r8bf8n7mu-msanders454.vercel.app" target="_blank">Visit Site</a>
+            <span>|</span>
+            <a href="https://github.com/msanders454/Wedding" target="_blank">Source Code</a>
+        </div>
+
         <section class="technology">
             <h3 class="tech-header">Technologies Used:</h3>
             <div class="tech-wrap">
